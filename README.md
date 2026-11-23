@@ -1,8 +1,8 @@
-# Rendezvous
+# Kratisi
 
-[![CI/CD](https://github.com/edisban/Rentezvous/actions/workflows/ci.yml/badge.svg)](https://github.com/edisban/Rentezvous/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/edisban/Kratisi/actions/workflows/ci.yml/badge.svg)](https://github.com/edisban/Kratisi/actions/workflows/ci.yml)
 
-**Rendezvous** (French for a meeting or appointment) is a full-stack booking platform. Clients find professionals (doctors, dentists, lawyers, trainers and more), book appointments and chat with them in real time. Professionals manage a public profile and accept or decline requests, which reach their dashboard the moment they're made.
+**Kratisi** (Greek for "booking") is a full-stack booking platform. Clients find professionals (doctors, dentists, lawyers, trainers and more), book appointments and chat with them in real time. Professionals manage a public profile and accept or decline requests, which reach their dashboard the moment they're made.
 
 ## Features
 
@@ -29,8 +29,8 @@
 Requires [Docker](https://www.docker.com/products/docker-desktop/).
 
 ```bash
-git clone https://github.com/edisban/Rentezvous.git
-cd Rentezvous
+git clone https://github.com/edisban/Kratisi.git
+cd Kratisi
 docker compose up --build
 ```
 
@@ -84,7 +84,7 @@ End-to-end tests run against the running app; install the browser once with `npx
 
 ## CI/CD
 
-GitHub Actions runs on every push and pull request: backend tests, frontend lint, tests and build, then the Playwright suite against the full Docker stack. When everything passes on `main`, the images are published to GitHub Container Registry (`ghcr.io/edisban/rendezvous-backend`, `ghcr.io/edisban/rendezvous-frontend`). Dependabot opens weekly, grouped dependency updates that go through the same pipeline.
+GitHub Actions runs on every push and pull request: backend tests, frontend lint, tests and build, then the Playwright suite against the full Docker stack. When everything passes on `main`, the images are published to GitHub Container Registry (`ghcr.io/edisban/kratisi-backend`, `ghcr.io/edisban/kratisi-frontend`). Dependabot opens weekly, grouped dependency updates that go through the same pipeline.
 
 ## Project structure
 

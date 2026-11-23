@@ -70,7 +70,7 @@ export default function Navbar() {
       boxShadow: theme.palette.mode === 'dark' ? '0 10px 30px -24px rgba(0, 0, 0, 0.9)' : '0 10px 30px -24px rgba(70, 30, 20, 0.45)',
     })}>
       <Container sx={{ minHeight: 72, display: 'flex', alignItems: 'center', gap: { xs: 0.5, sm: 1 } }}>
-        <Box component={Link} to={loggedIn ? dashboard : '/'} aria-label="Rendezvous" sx={{ textDecoration: 'none', mr: 'auto', display: 'flex', alignItems: 'center' }}>
+        <Box component={Link} to={loggedIn ? dashboard : '/'} aria-label="Kratisi" sx={{ textDecoration: 'none', mr: 'auto', display: 'flex', alignItems: 'center' }}>
           {/* The full wordmark doesn't fit next to the menu on phones: show the mark there */}
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }}><Logo /></Box>
           <Box sx={{ display: { xs: 'flex', sm: 'none' } }}><LogoMark size={32} /></Box>
